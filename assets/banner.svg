@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="teal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25" />
+      <circle cx="40" cy="40" r="1" fill="#475569" fill-opacity="0.3" />
+    </pattern>
+
+    <!-- Filter for Glow Effects -->
+    <filter id="glow-purple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60" result="blur" />
+    </filter>
+    <filter id="glow-teal" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="50" result="blur" />
+    </filter>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 44px;
+      letter-spacing: -0.5px;
+      fill: #ffffff;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 19px;
+      letter-spacing: 0.2px;
+      fill: #94a3b8;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      fill: #e2e8f0;
+    }
+    .status-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 1px;
+      fill: #38bdf8;
+      text-transform: uppercase;
+    }
+    .time-slot {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+      font-size: 11px;
+      font-weight: 500;
+      fill: #cbd5e1;
+    }
+
+    /* Dynamic / Animated elements: pulses and gentle drifts */
+    @keyframes pulseOrb1 {
+      0%, 100% { opacity: 0.45; transform: scale(1) translate(0px, 0px); }
+      50% { opacity: 0.7; transform: scale(1.15) translate(20px, -15px); }
+    }
+    @keyframes pulseOrb2 {
+      0%, 100% { opacity: 0.35; transform: scale(1) translate(0px, 0px); }
+      50% { opacity: 0.6; transform: scale(1.2) translate(-25px, 20px); }
+    }
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes pingDot {
+      0% { r: 4px; opacity: 1; }
+      70% { r: 9px; opacity: 0; }
+      100% { r: 4px; opacity: 0; }
+    }
+    @keyframes shimmerBar {
+      0%, 100% { stroke-dashoffset: 0; opacity: 0.7; }
+      50% { stroke-dashoffset: 40; opacity: 1; }
+    }
+
+    .orb-1 { animation: pulseOrb1 9s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb-2 { animation: pulseOrb2 11s ease-in-out infinite; transform-origin: 1000px 300px; }
+    .floating-card { animation: floatCard 6s ease-in-out infinite; }
+    .ping-circle { animation: pingDot 2.2s cubic-bezier(0, 0, 0.2, 1) infinite; }
+    .stream-line { stroke-dasharray: 8 6; animation: shimmerBar 4s linear infinite; }
+  </style>
+
+  <!-- Deep Cosmic Background -->
+  <rect width="1200" height="400" fill="url(#bg-grad)" />
+
+  <!-- Animated Glowing Orbs (in background) -->
+  <g class="orb-1">
+    <circle cx="200" cy="120" r="140" fill="#6366f1" filter="url(#glow-purple)" opacity="0.45" />
+  </g>
+  <g class="orb-2">
+    <circle cx="1020" cy="280" r="160" fill="#06b6d4" filter="url(#glow-teal)" opacity="0.4" />
+  </g>
+
+  <!-- Geometric Grid Pattern Overlay -->
+  <rect width="1200" height="400" fill="url(#grid)" />
+
+  <!-- Flowing decorative dynamic arcs (behind text) -->
+  <path class="stream-line" d="M 50 350 Q 300 280 600 340 T 1150 240" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.3" />
+  <path class="stream-line" d="M 100 80 Q 450 160 800 60 T 1180 140" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.25" />
+
+  <!-- RIGHT SIDE: Interactive UI / Calendar Graphic (Card) -->
+  <g class="floating-card" transform="translate(810, 65)" filter="url(#drop-shadow)">
+    <!-- Main Slate Panel -->
+    <rect width="330" height="270" rx="18" fill="url(#card-grad)" stroke="#334155" stroke-width="1.2" />
+    
+    <!-- Panel Header -->
+    <rect width="330" height="52" rx="18" fill="#1e293b" fill-opacity="0.8" />
+    <circle cx="24" cy="26" r="5" fill="#ef4444" />
+    <circle cx="40" cy="26" r="5" fill="#f59e0b" />
+    <circle cx="56" cy="26" r="5" fill="#10b981" />
+    <text x="80" y="30" class="status-text">LIVE RESERVATION ENGINE</text>
+
+    <!-- Mini Calendar / Booking Slot 1 (Confirmed) -->
+    <g transform="translate(18, 68)">
+      <rect width="294" height="54" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="1" fill-opacity="0.7" />
+      <circle cx="20" cy="27" r="4" fill="#3b82f6" />
+      <circle cx="20" cy="27" class="ping-circle" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="36" y="24" class="time-slot" font-weight="700" fill="#f8fafc">Table 12 • 4 Guests</text>
+      <text x="36" y="42" class="time-slot" fill="#64748b">19:30 - 21:00 • VIP Booth</text>
+      <rect x="210" y="16" width="72" height="22" rx="6" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="0.8" />
+      <text x="222" y="31" class="time-slot" font-size="10" fill="#34d399" font-weight="700">CONFIRMED</text>
+    </g>
+
+    <!-- Mini Calendar / Booking Slot 2 (Pending/Online) -->
+    <g transform="translate(18, 132)">
+      <rect width="294" height="54" rx="10" fill="#0f172a" stroke="#475569" stroke-width="0.8" fill-opacity="0.6" />
+      <circle cx="20" cy="27" r="4" fill="#8b5cf6" />
+      <text x="36" y="24" class="time-slot" font-weight="700" fill="#f8fafc">Room 402 • Suite</text>
+      <text x="36" y="42" class="time-slot" fill="#64748b">Check-in Today • 2 Nights</text>
+      <rect x="210" y="16" width="72" height="22" rx="6" fill="#8b5cf6" fill-opacity="0.15" stroke="#8b5cf6" stroke-width="0.8" />
+      <text x="220" y="31" class="time-slot" font-size="10" fill="#a78bfa" font-weight="700">ONLINE SYNC</text>
+    </g>
+
+    <!-- Mini Calendar / Booking Slot 3 (Instant Slot) -->
+    <g transform="translate(18, 196)">
+      <rect width="294" height="54" rx="10" fill="#0f172a" stroke="#475569" stroke-width="0.8" fill-opacity="0.6" />
+      <circle cx="20" cy="27" r="4" fill="#06b6d4" />
+      <text x="36" y="24" class="time-slot" font-weight="700" fill="#f8fafc">Consultation • 30 min</text>
+      <text x="36" y="42" class="time-slot" fill="#64748b">Direct Widget • Calendar Sync</text>
+      <rect x="210" y="16" width="72" height="22" rx="6" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-width="0.8" />
+      <text x="222" y="31" class="time-slot" font-size="10" fill="#22d3ee" font-weight="700">AVAILABLE</text>
+    </g>
+  </g>
+
+  <!-- LEFT SIDE: Title, Subtitle, Feature Pills (strictly foregrounded) -->
+  <!-- Top Tag / Pill -->
+  <g transform="translate(80, 75)">
+    <rect width="220" height="30" rx="15" fill="#1e293b" stroke="#475569" stroke-width="1" />
+    <circle cx="16" cy="15" r="4" fill="#10b981" />
+    <circle cx="16" cy="15" class="ping-circle" fill="none" stroke="#10b981" stroke-width="1.5" />
+    <text x="28" y="20" class="pill-text" font-size="11" fill="#38bdf8">CURATED OPEN ECOSYSTEM</text>
+  </g>
+
+  <!-- Main Title -->
+  <g transform="translate(80, 150)">
+    <text class="title-text">
+      Awesome <tspan fill="url(#primary-grad)">Booking &amp; Reservation</tspan>
+    </text>
+    <text y="52" class="title-text">Management Systems</text>
+  </g>
+
+  <!-- Subtitle -->
+  <g transform="translate(80, 245)">
+    <text class="subtitle-text">
+      The definitive guide to proprietary SaaS platforms and open-source scheduling engines.
+    </text>
+  </g>
+
+  <!-- Feature Pills / Badges in Foreground -->
+  <g transform="translate(80, 285)">
+    <!-- Pill 1: SaaS & Enterprise -->
+    <g transform="translate(0, 0)">
+      <rect width="168" height="34" rx="8" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+      <text x="18" y="22" class="pill-text" fill="#c7d2fe">⚡ SaaS Platforms</text>
+    </g>
+
+    <!-- Pill 2: Open Source -->
+    <g transform="translate(180, 0)">
+      <rect width="180" height="34" rx="8" fill="#022c22" stroke="#10b981" stroke-width="1.2" />
+      <text x="18" y="22" class="pill-text" fill="#a7f3d0">🌱 Open-Source Tools</text>
+    </g>
+
+    <!-- Pill 3: Transparent Pricing -->
+    <g transform="translate(372, 0)">
+      <rect width="188" height="34" rx="8" fill="#082f49" stroke="#0ea5e9" stroke-width="1.2" />
+      <text x="18" y="22" class="pill-text" fill="#bae6fd">📊 Verified Pricing &amp; Tier</text>
+    </g>
+
+    <!-- Pill 4: Self-Hosted -->
+    <g transform="translate(572, 0)">
+      <rect width="130" height="34" rx="8" fill="#2e1065" stroke="#a855f7" stroke-width="1.2" />
+      <text x="18" y="22" class="pill-text" fill="#e9d5ff">🔒 Self-Hosted</text>
+    </g>
+  </g>
+</svg>
