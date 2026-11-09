@@ -7,7 +7,7 @@
 [![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)<a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![GitHub license](https://img.shields.io/github/license/ishandutta2007/Awesome-Booking-Reservation-Management?style=flat-square)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Booking-Reservation-Management?style=flat-square)](https://github.com/ishandutta2007/Awesome-Booking-Reservation-Management/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Booking-Reservation-Management?style=flat-square)](https://github.com/ishandutta2007/Awesome-Booking-Reservation-Management/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/ishandutta2007/Awesome-Booking-Reservation-Management?style=flat-square)](https://github.com/ishandutta2007/Awesome-Booking-Reservation-Management/network)
 <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
@@ -53,7 +53,7 @@ A comprehensive directory of proprietary cloud-hosted booking, ticketing, and re
 Self-hosted, transparent, and privacy-first reservation engines, room booking software, and appointment scheduling systems.
 *Sorted in descending order by GitHub stargazer count.*
 
-| Project | Stars | License | Technology Stack | Primary Focus & Capabilities |
+| Project | GitHub_Stars | License | Technology Stack | Primary Focus & Capabilities |
 |---|---|---|---|---|
 | **[Cal.com](https://github.com/calcom/cal.com)** | [![Cal.com Stargazers](https://img.shields.io/github/stars/calcom/cal.com?style=social&color=white)](https://github.com/calcom/cal.com/stargazers) | AGPL-3.0 / Commercial | Next.js / TypeScript / PostgreSQL | 📅 Enterprise-grade scheduling infrastructure for individuals, businesses, and platform embeds. Calendly open-source alternative. |
 | **[QloApps](https://github.com/Qloapps/QloApps)** | [![QloApps Stargazers](https://img.shields.io/github/stars/Qloapps/QloApps?style=social&color=white)](https://github.com/Qloapps/QloApps/stargazers) | OSL-3.0 | PHP / MySQL | 🏨 Complete open-source hotel management and reservation system featuring a Booking Engine, Property Management System (PMS), and hotel website. |
@@ -101,3 +101,12 @@ If you found this resource helpful, please consider:
 <div align="center">
 <sub>Maintained with ❤️ by <a href="https://github.com/ishandutta2007">Ishan Dutta</a>. Contributions and suggestions are always welcome!</sub>
 </div>
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Booking-Reservation-Management&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Booking-Reservation-Management_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Booking-Reservation-Management_growth.svg">
+  </picture>
+</a>
